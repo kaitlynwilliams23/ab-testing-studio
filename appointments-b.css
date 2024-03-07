@@ -31,7 +31,7 @@
 .appointments-container-name {
     font-size: 20px;
     font-family: 'PPNeueMontrealBook';
-    color: #868686;
+    color: black;
     margin-top: 0;
     margin-bottom: 12px;
 }
@@ -39,7 +39,7 @@
 .divider {
     height: 1px;
     width: 100%;
-    background-color: #DADADA;
+    background-color: darkgray;
     margin-top: 0;
     margin-bottom: 17px;
 }
@@ -49,6 +49,10 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
+}
+.appointment-row:hover,
+.appointment-row:focus {
+  background-color: lightgray;
 }
 
 .appointment-date {
@@ -62,6 +66,8 @@
     text-align: right;
     font-size: 24px;
     font-family: 'PPNeueMontrealThin';
+    color: black; 
+    font-weight:bold;
 }
 }
 
@@ -74,7 +80,7 @@
 .appointment-title, .appointment-text {
     margin-top: 0;
     margin-bottom: 0;
-    color: #868686;
+    color: black;
 }
 
 .appointment-title {
@@ -100,8 +106,17 @@
     border-radius: 9px;
     width: 180px;
     height: 45px;
-    color: white;
+    color: black;
 }
+.working-button:hover,
+.working-button:focus {
+    background-color: lightblue;
+}
+.defunct-button:hover,
+.defunct-button:focus {
+  background-color: lightblue;
+}
+
 }
 
 .success-dialog {
@@ -124,8 +139,10 @@
     background-color: #D4E8FF;
     border-radius: 9px;
     padding: 14px 21px 14px 21px;
-    color: white;
+    color: black;
 }
+
+
 }
 
 .success-dialog::backdrop {
